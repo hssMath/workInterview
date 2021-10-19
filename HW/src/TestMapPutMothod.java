@@ -9,7 +9,7 @@ public class TestMapPutMothod {
     public static void main(String[] args) {
         Map<String, String> map = new HashMap<>();
         map.put("111", "2222");
-        map.put("111", "2222");
+        map.put("111", "3333");
         map.put("123", "2222");
         map.put("234", "2222");
         map.put("456", "2222");
@@ -38,9 +38,12 @@ public class TestMapPutMothod {
         }
 
 //4.通过键找值遍历
+        System.out.println("-----------------");
         for (String key : map.keySet()) {
             String value = map.get(key);
             System.out.println("Key = " + key + ", Value = " + value);
         }
+        System.out.println("-----------------");
+        System.out.println(map.get("111"));
     }
 }

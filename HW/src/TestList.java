@@ -7,7 +7,7 @@ import java.util.*;
  */
 public class TestList {
     public static void main(String[] args) {
-        //public class ArrayList<E>     extends AbstractList<E>            implements List<E>, RandomAccess, Cloneable, java.io.Serializable
+        //public class ArrayList<E>     extends AbstractList<E>     implements List<E>, RandomAccess, Cloneable, java.io.Serializable
         List<String> list = new ArrayList<>();
         list.add("123");
         list.add("456");
