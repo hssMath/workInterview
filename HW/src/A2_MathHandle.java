@@ -35,9 +35,9 @@ public class A2_MathHandle {
 //        }
 
 //        3.使用Math函数的round方法。
-//        Scanner scan = new Scanner(System.in);
-//        while(scan.hasNext()){
-//            System.out.println( Math.round(scan.nextDouble()));
-//        }
+        Scanner scan = new Scanner(System.in);
+        while(scan.hasNext()){
+            System.out.println( Math.round(scan.nextDouble()));
+        }
     }
 }

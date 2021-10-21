@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.util.Deque;
 import java.util.HashMap;
 import java.util.LinkedList;
-public class A7_Hard_MathCalculate {
+public class A7_HardMathCalculate {
     public static void main(String[] args) throws Exception{
         // 使用 map 维护一个运算符优先级
         // 这里的优先级划分按照「数学」进行划分即可

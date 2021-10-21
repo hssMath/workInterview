@@ -6,7 +6,7 @@ import java.util.*;
  * 免单统计
  * 题目描述
  * 某商城举办了一个促销活动，如果某顾客是某一秒内早时刻下单的顾客（可能是多个人），则可以 获取免单。请你编程计算有多少顾客可以获取免单。
- * 解答要求 时间限制：3000ms, 内存限制：64MB 输入 输入为n行数据，每一行表示一位顾客的下单时 间。 以（年-月-日 时-分-秒.毫秒）yyyy-MM-dd HH:mm:ss.ﬀf形式给出。
+ * 解答要求 时间限制：3000ms, 内存限制：64MB 输入 输入为n行数据，每一行表示一位顾客的下单时间。 以（年-月-日 时-分-秒.毫秒）yyyy-MM-dd HH:mm:ss.ﬀf形式给出。
  *
  * 0<n<50000 2000<yyyy<2020 0<MM<=12 0<dd<=28 0<=HH<=23 0<=mm<=59 0<=ss<=59 0<=ﬀf<=999 所有输 入保证合法。
  * 输出 输出一个整数，表示有多少顾客可以获取免单。
@@ -46,17 +46,6 @@ public class A1_MianDanTest {
         topDates.add("2018-12-28 13:08:00.444");
         topDates.add("2018-12-28 13:08:00.562");
         topDates.add("2018-12-28 13:08:00.652");
-//        int i = 0;
-//        while (in.hasNextLine()){
-//            String orderDate = in.nextLine();
-//            if(validateDate(orderDate)){
-//                topDates.add(orderDate);
-//            }
-//            i++;
-//            if(i>=n) {
-//                break;
-//            }
-//        }
         Integer topUserNum = doGetTopUserNum(topDates);
         System.out.println(topUserNum);
         in.close();

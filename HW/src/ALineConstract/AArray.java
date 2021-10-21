@@ -44,8 +44,7 @@ public class AArray {
 	
 	/**
 	 * 
-	 * @Description:数组中添加新元素
-	 * 		因为每次都是一个一个的新增，所以在再下一次添加之前，数组的长度都会被+1
+	 * @Description:数组中添加新元素:因为每次都是一个一个的新增，所以在再下一次添加之前，数组的长度都会被+1
 	 * @param:@param element   
 	 * @author:heshuanshuan
 	 * @date:2019年10月30日
@@ -53,7 +52,7 @@ public class AArray {
 	 * @history 修订历史（历次修订内容、修订人、修订时间等）
 	 */
 	public void addElement(int element) {
-		int[] newArray = new int[elementArray.length+1];//创建一个新数组:此数组比原数组的长度多一个
+		int[] newArray = new int[elementArray.length+1];//创建一个新数组:此数组比原数组的长度+1
 		for (int i = 0; i < elementArray.length; i++) {//把原数组元素复制到新数组
 			newArray[i]=elementArray[i];
 		}

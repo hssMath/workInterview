@@ -1,8 +1,6 @@
-import jdk.nashorn.internal.objects.annotations.Where;
-
 import java.util.Scanner;
 
-public class A3_Weiyunsuan {
+public class A3_weiyunsuan {
     /**
      * 描述:输入一个int型的正整数，计算出该int型数据在内存中存储时1的个数。
      * 输入描述：输入一个整数（int类型）
