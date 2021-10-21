@@ -6,10 +6,9 @@ public class FMegeSort {
 
 	public static void main(String[] args) {
 		int[] arr = new int[] {1,3,5,	2,4,6,8,10};
-		System.out.println(Arrays.toString(arr));
+		System.out.println("归并排序前："+Arrays.toString(arr));
 		mergeSort(arr, 0, arr.length-1);
-//		mege(arr, 0, 2 , arr.length-1);
-		System.out.println(Arrays.toString(arr));
+		System.out.println("归并排序前："+Arrays.toString(arr));
 	}
 	
 	/**

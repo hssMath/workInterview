@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class ESelectSort {
 	public static void main(String[] args) {
 		int []arr = new int[] {3,4,2,6,5,8,1,0,9};
-		System.out.println(Arrays.toString(arr));
+		System.out.println("选择排序前："+Arrays.toString(arr));
 		selectSort(arr);
-		System.out.println(Arrays.toString(arr));
+		System.out.println("选择排序前："+Arrays.toString(arr));
 	}
 
 	/**

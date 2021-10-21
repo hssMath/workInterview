@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class CInsetSort {
 	public static void main(String[] args) {
 		int []arr = new int[]{2,1,5,3,6,9};
-		System.out.println(Arrays.toString(arr));
+		System.out.println("插入排序前："+Arrays.toString(arr));
 		insertSort(arr);
-		System.out.println(Arrays.toString(arr));
+		System.out.println("插入排序后："+Arrays.toString(arr));
 		
 	}
 	

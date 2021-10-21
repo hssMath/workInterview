@@ -5,9 +5,10 @@ import java.util.Arrays;
 public class BQuickSort {
 
 	public static void main(String[] args) {
-		int []arr = new int[]{2,4,5,6,7,9};
-		System.out.println(Arrays.toString(arr));
+		int []arr = new int[]{2,4,10,1,7,9};
+		System.out.println("快速排序前："+Arrays.toString(arr));
 		qucikSort(arr, 0, arr.length-1);
+		System.out.println("快速排序后："+Arrays.toString(arr));
 	}
 	/**
 	 * 
