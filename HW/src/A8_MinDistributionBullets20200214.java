@@ -1,4 +1,3 @@
-package FirstWrittenTest;
 import java.util.Scanner;
 
 /**
@@ -9,7 +8,7 @@ import java.util.Scanner;
  * @author£ºheshuanshuan 
  * @date 2020Äê2ÔÂ19ÈÕ
  */
-public class minBullet20200214 {
+public class A8_MinDistributionBullets20200214 {
 	@SuppressWarnings({ "resource", "unlikely-arg-type", "unused" })
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);

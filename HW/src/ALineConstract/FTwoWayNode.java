@@ -6,20 +6,20 @@ package ALineConstract;
  * @author：heshuanshuan 
  * @date 2020年1月1日
  */
-public class FoubleNode {
-	private FoubleNode pre = this;//上一个节点指向自己
-	private FoubleNode next = this;//下一个节点指向自己
+public class FTwoWayNode {
+	private FTwoWayNode pre = this;//上一个节点指向自己
+	private FTwoWayNode next = this;//下一个节点指向自己
 	private int data;
 	
 	
 	//初始化双向链表：
-	public FoubleNode(int data) {
+	public FTwoWayNode(int data) {
 		this.data=data;
 	}
 	
 	//增加节点
-	public void after(FoubleNode node) {
-		FoubleNode nextNext = next;//（取出第一个整体节点3/3段处位置的节点，作为临时变量）双向循环链表由3部分组成
+	public void after(FTwoWayNode node) {
+		FTwoWayNode nextNext = next;//（取出第一个整体节点3/3段处位置的节点，作为临时变量）双向循环链表由3部分组成
 		this.next=node;// （让第一个整体的下一个节点指第二个整体）把新节点作为当前节点的下一节点
 		node.pre=this;//（第二个整体的上一个节点指向第一个完整节点）把当前节点作为 新节点的前一个节点
 		
@@ -28,9 +28,9 @@ public class FoubleNode {
 	}
 	
 	public static void main(String[] args) {
-		FoubleNode doubleNode22 = new FoubleNode(22);
-		FoubleNode doubleNode33 = new FoubleNode(33);
-		FoubleNode doubleNode44 = new FoubleNode(44);
+		FTwoWayNode doubleNode22 = new FTwoWayNode(22);
+		FTwoWayNode doubleNode33 = new FTwoWayNode(33);
+		FTwoWayNode doubleNode44 = new FTwoWayNode(44);
 		doubleNode22.after(doubleNode33);
 		doubleNode33.after(doubleNode44);
 	}

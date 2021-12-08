@@ -1,5 +1,5 @@
 package ALineConstract;
-public class Recursive {
+public class GRecursive {
 	public static void main(String[] args) {
 		print(8);
 	}
