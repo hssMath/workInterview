@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class A5_qishiping_out {
+public class A5_MaxWaterBottle {
     /**
      * 描述
      *      有这样一道智力题：“某商店规定：三个空汽水瓶可以换一瓶汽水。小张手上有十个空汽水瓶，她最多可以换多少瓶汽水喝？”答案是5瓶，方法如下：先用9个空瓶子换3瓶汽水，喝掉3瓶满的，喝完以后4个空瓶子，用3

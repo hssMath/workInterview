@@ -25,7 +25,7 @@ import java.util.*;
  * 3
  * 原文链接：https://blog.csdn.net/liub112/article/details/103312168/
  */
-public class A1_MianDanTest {
+public class A1_FreeOrderStatistics {
     private static final Integer N = 50000;
 
     /**

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class A3_weiyunsuan {
+public class A3_BitCalculation {
     /**
      * 描述:输入一个int型的正整数，计算出该int型数据在内存中存储时1的个数。
      * 输入描述：输入一个整数（int类型）
