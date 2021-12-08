@@ -1,3 +1,5 @@
+package LeedCodeQuestions;
+
 import java.util.Scanner;
 
 /**
@@ -13,7 +15,7 @@ public class A8_MinDistributionBullets20200214 {
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
 		String intput  = in.nextLine();
-		String[] arrString = intput.toString().split(" ");
+		String[] arrString = intput.split(" ");
 		int[] arrInt = new int[arrString.length];
 		for (int i = 0; i < arrString.length; i++) {
 			arrInt[i] = Integer.parseInt(arrString[i]);

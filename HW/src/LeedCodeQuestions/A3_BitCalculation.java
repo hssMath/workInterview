@@ -1,3 +1,5 @@
+package LeedCodeQuestions;
+
 import java.util.Scanner;
 
 public class A3_BitCalculation {
