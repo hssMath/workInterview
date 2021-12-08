@@ -1,3 +1,5 @@
+package ZTest;
+
 //斐波那契数列
 public class TestDigui {
     public static void main(String[] args) {
