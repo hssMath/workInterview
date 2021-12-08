@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class ABubbleSort {
 	public static void main(String[] args) {
-		int []arr = new int[]{7,6,5,8,9,4,3,2};
+		int []arr = new int[]{7,6,5,8,9,10,4,3,2};
 		System.out.println("冒泡排序前："+Arrays.toString(arr));
 		arr = ABubbleSortSmallToBigTest(arr);
 		System.out.println("冒泡（小->大）排序后："+Arrays.toString(arr));
@@ -23,9 +23,9 @@ public class ABubbleSort {
 	 * @history 修订历史（历次修订内容、修订人、修订时间等）
 	 */
 	public static int[] ABubbleSortSmallToBigTest(int[] arr) {
-		for (int i = 0; i < arr.length-1; i++) {//比较的轮数：下标从0开始，最后一个原色的下标为n-1
-			for (int j = 0; j < arr.length-1-i; j++) {//每一轮比较的次数:
-				if (arr[j]>arr[j+1]) {//每一轮都从0下标元素与0+1元素比较
+		for (int i = 0; i < arr.length-1; i++) {//比较的轮数：下标从0开始，最后一个原色的下标为n-1。
+			for (int j = 0; j < arr.length-1-i; j++) {//每一轮比较的次数:从下标0开始，截至n-1-i。每一个循环结束，最后一个位置最大or最小。故循环次数为arr.length-1-i。
+				if (arr[j]>arr[j+1]) {//每一轮都从0下标元素与0+1元素比较，交换位置。
 					int k = arr[j];
 					arr[j]=arr[j+1];
 					arr[j+1]=k;
@@ -46,9 +46,9 @@ public class ABubbleSort {
 	 * @history 修订历史（历次修订内容、修订人、修订时间等）
 	 */
 	public static int[] ABubbleSortBigToSmallTest(int[] arr) {
-		for (int i = 0; i < arr.length-1; i++) {//比较的轮数：下标从0开始，最后一个原色的下标为n-1
-			for (int j = 0; j < arr.length-1-i; j++) {//每一轮比较的次数:
-				if (arr[j]<arr[j+1]) {//每一轮都从0下标元素与0+1元素比较
+		for (int i = 0; i < arr.length-1; i++) {//比较的轮数：下标从0开始，最后一个原色的下标为n-1。
+			for (int j = 0; j < arr.length-1-i; j++) {//每一轮比较的次数:从下标0开始，截至n-1-i。每一个循环结束，最后一个位置最大or最小。故循环次数为arr.length-1-i。
+				if (arr[j]<arr[j+1]) {//每一轮都从0下标元素与0+1元素比较，交换位置。
 					int k = arr[j];
 					arr[j]=arr[j+1];
 					arr[j+1]=k;
