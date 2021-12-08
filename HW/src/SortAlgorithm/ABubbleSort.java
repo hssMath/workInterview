@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class ABubbleSort {
 	public static void main(String[] args) {
 		int []arr = new int[]{7,6,5,8,9,10,4,3,2};
-		System.out.println("冒泡排序前："+Arrays.toString(arr));
+		System.out.println("冒泡排序前："+Arrays.toString(arr));//数组打印为字符串可以直接使用：Arrays.toString(arr)
 		arr = ABubbleSortSmallToBigTest(arr);
 		System.out.println("冒泡（小->大）排序后："+Arrays.toString(arr));
 		arr = ABubbleSortBigToSmallTest(arr);

@@ -1,5 +1,5 @@
-package ALineConstract;
-public class LineSelect {
+package SortAlgorithm;
+public class GBinarySearch {
 	/**
 	 * 
 	 * @Description:二分法查找使用while是最优的循环
@@ -17,7 +17,7 @@ public class LineSelect {
 		int end = arr.length-1;
 		int miidle = (end+begin)/2;//返回值为int，会自动截断取整
 		
-		while (true) {//用whilr是因为不需要for循环，for循环需要i++；while可以不用.直接指定下标进行比较
+		while (true) {//用whilr是因为for需要循环次数；while可以不用.直接指定下标进行比较
 			if (begin>=end) {
 				return -1;
 			}
@@ -67,6 +67,6 @@ public class LineSelect {
 //		return miidle;
 //	}
 	public static void main(String[] args) {
-		System.out.println(LineSelect.getMiddleWhileIndex(99));
+		System.out.println(GBinarySearch.getMiddleWhileIndex(5));
 	}
 }
