@@ -17,14 +17,9 @@ public class TestRecursiveFiboracciSequence {
 	}
 	
 	/**
-	 * 
-	 * @Description:斐波那契数列-递归方法
-	 * @param:@param i
-	 * @param:@return   
-	 * @author:heshuanshuan
-	 * @date:2020年1月14日
-	 * @return:int 
-	 * @history 修订历史（历次修订内容、修订人、修订时间等）
+	 * 斐波那契数列-递归方法
+	 * @param i
+	 * @return
 	 */
 	public static int fiboracci(int i) {
 		if (i==1||i==2) {

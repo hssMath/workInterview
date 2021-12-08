@@ -17,7 +17,7 @@ public class GBinarySearch {
 		int end = arr.length-1;
 		int miidle = (end+begin)/2;//返回值为int，会自动截断取整
 		
-		while (true) {//用whilr是因为for需要循环次数；while可以不用.直接指定下标进行比较
+		while (true) {//用while是因为for需要循环次数；while可以不用.直接指定下标进行比较
 			if (begin>=end) {
 				return -1;
 			}
