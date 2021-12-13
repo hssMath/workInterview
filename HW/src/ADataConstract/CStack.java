@@ -1,4 +1,7 @@
 package ADataConstract;
+
+import java.util.Stack;
+
 /**
  * @decription:栈
  * @class_name：Stack
@@ -7,7 +10,8 @@ package ADataConstract;
  * @date 2019年11月12日
  */
 public class CStack {
-	int[] elementArray;//栈的底层使用数组来存储
+	//栈的底层使用数组来存储
+	int[] elementArray;
 	public CStack() {
 		elementArray = new int[0];
 	}
@@ -130,5 +134,7 @@ public class CStack {
 		System.out.println(cStack.peak());
 		//查看是否为空
 		System.out.println(cStack.isempy());
+
+//		Stack stack = new Stack();
 	}
 }
