@@ -1,4 +1,4 @@
-package ZTest;
+package ADataConstract;
 
 import java.util.*;
 
@@ -7,7 +7,7 @@ import java.util.*;
  * List的底层原理：
  *      给了一个长度默认为10的object数组来进行元素的添加、插入、删除操作。
  */
-public class TestListDataStructure {
+public class AList {
     public static void main(String[] args) {
         //public class ArrayList<E>     extends AbstractList<E>     implements List<E>, RandomAccess, Cloneable, java.io.Serializable
         List<String> list = new ArrayList<>();
@@ -15,14 +15,22 @@ public class TestListDataStructure {
         list.add("456");
         System.out.println(list);
 
+        /**
+         *一般for循环
+         */
         for (int i = 0; i <list.size() ; i++) {
             System.out.println(list.get(i));
         }
-
+        /**
+         * 增强for循环
+         */
         for (final String s:list){
             System.out.println(s);
         }
 
+        /**
+         * 迭代
+         */
         for(Iterator iter = list.iterator();iter.hasNext();){
             System.out.println(iter.next());
         }

@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 
-public class TimeClassTest {
+public class LocalDateTimeTest {
     public static void main(String[] args) {
 //        LocalDate today = LocalDate.now(); //现在的日期
 //        System.out.println(today);

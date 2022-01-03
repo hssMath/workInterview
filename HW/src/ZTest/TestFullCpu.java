@@ -1,6 +1,6 @@
 package ZTest;
 
-public class FullCpu {
+public class TestFullCpu {
     public static void main(String[] args) {
         while (true) {
             new Thread(new Runnable() {
