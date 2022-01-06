@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fad9c0bc-b44b-4571-8c4f-8222a84ef6c9" name="默认变更列表" comment="" />
+    <list default="true" id="fad9c0bc-b44b-4571-8c4f-8222a84ef6c9" name="默认变更列表" comment="">
+      <change afterPath="$PROJECT_DIR$/src/TimedTask" afterDir="true" />
+      <change beforePath="$PROJECT_DIR$/src/ADataConstract/AList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ADataConstract/AList.java" afterDir="false" />
+    </list>
+    <list id="7c546492-90e4-42bc-9273-628fca454429" name="NoCommit" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <file path="$PROJECT_DIR$/.idea/workspace.xml" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/misc.xml" ignored="false" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +33,10 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://E:/Java1.8/jdk1.8/src.zip!/java/time/LocalDateTime.java" root0="SKIP_INSPECTION" />
+    <setting file="jar://E:/Java1.8/jdk1.8/src.zip!/java/time/format/DateTimeFormatter.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -51,15 +64,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="项目" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
-  </component>
-  <component name="ReaderModeSettings">
-    <option name="enabled" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -67,38 +78,68 @@
       <recent name="E:\JetBrains-Workspaces\IdeaProjects\HW\src" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.TestList">
-    <configuration name="A5_qishiping_out" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="A5_qishiping_out" />
-      <module name="HW" />
+  <component name="RunManager" selected="应用程序.TestRecursiveFiboracciSequence">
+    <configuration name="AList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ADataConstract.AList" />
+      <module name="HwTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ADataConstract.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="A7_Hard_MathCalculate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="A7_Hard_MathCalculate" />
-      <module name="HW" />
+    <configuration name="ESelectSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BSortAlgorithm.ESelectSort" />
+      <module name="HwTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BSortAlgorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDigui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestDigui" />
-      <module name="HW" />
+    <configuration name="LocalDateTimeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ZTest.LocalDateTimeTest" />
+      <module name="HwTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ZTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestForeach" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestForeach" />
-      <module name="HW" />
+    <configuration name="TestHanoi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ZTest.TestHanoi" />
+      <module name="HwTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ZTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestList" />
-      <module name="HW" />
+    <configuration name="TestRecursiveFiboracciSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ZTest.TestRecursiveFiboracciSequence" />
+      <module name="HwTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ADataConstract.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -116,21 +157,41 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.TestList" />
-        <item itemvalue="应用程序.TestForeach" />
-        <item itemvalue="应用程序.A7_Hard_MathCalculate" />
-        <item itemvalue="应用程序.A5_qishiping_out" />
-        <item itemvalue="应用程序.TestDigui" />
+        <item itemvalue="应用程序.TestRecursiveFiboracciSequence" />
+        <item itemvalue="应用程序.LocalDateTimeTest" />
+        <item itemvalue="应用程序.TestHanoi" />
+        <item itemvalue="应用程序.AList" />
+        <item itemvalue="应用程序.ESelectSort" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration>C:\Users\hss\AppData\Roaming\Subversion</configuration>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\dhcc\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\ideaProject\HW" />
+          <option name="myCopyRoot" value="D:\ideaProject\HW" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\ideaProject\HW" />
+          <option name="myCopyRoot" value="D:\ideaProject\HW" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
       <changelist id="fad9c0bc-b44b-4571-8c4f-8222a84ef6c9" name="默认变更列表" comment="" />
+      <changelist id="7c546492-90e4-42bc-9273-628fca454429" name="NoCommit" comment="" />
       <created>1627027646548</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -145,11 +206,49 @@
       <workItem from="1631198513525" duration="2892000" />
       <workItem from="1631254425326" duration="2598000" />
       <workItem from="1632464939496" duration="723000" />
+      <workItem from="1640965628868" duration="4297000" />
+      <workItem from="1640872989671" duration="648000" />
+      <workItem from="1641095599309" duration="1572000" />
+      <workItem from="1641178072689" duration="1928000" />
+      <workItem from="1641180032927" duration="533000" />
+      <workItem from="1641180921245" duration="137000" />
+      <workItem from="1641187222466" duration="3192000" />
+      <workItem from="1641433311451" duration="7000" />
+      <workItem from="1641433384886" duration="57000" />
     </task>
+    <task id="LOCAL-00001" summary="时间处理类">
+      <created>1640962817843</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1640962817843</updated>
+    </task>
+    <task id="LOCAL-00002">
+      <created>1641180010061</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641180010061</updated>
+    </task>
+    <task id="LOCAL-00003" summary="优化">
+      <created>1641181051216</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1641181051216</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="时间处理类" />
+    <MESSAGE value="优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
