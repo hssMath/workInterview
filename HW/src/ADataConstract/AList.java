@@ -29,7 +29,7 @@ public class AList {
         }
 
         /**
-         * 迭代
+         * 迭代遍历
          */
         for(Iterator iter = list.iterator();iter.hasNext();){
             System.out.println(iter.next());
