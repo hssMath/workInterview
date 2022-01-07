@@ -1,4 +1,4 @@
-package DDesignModel.BDynamicAproxy.Impl;
+package DDesignModel.BJdkDynamiAproxy.Impl;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

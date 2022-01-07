@@ -1,9 +1,9 @@
-package DDesignModel.BDynamicAproxy;
+package DDesignModel.BJdkDynamiAproxy;
 
 
-import DDesignModel.BDynamicAproxy.Bo.Subject;
-import DDesignModel.BDynamicAproxy.Impl.JDKDynamicProxy;
-import DDesignModel.BDynamicAproxy.Impl.Subjectlmpl;
+import DDesignModel.BJdkDynamiAproxy.Bo.Subject;
+import DDesignModel.BJdkDynamiAproxy.Impl.JDKDynamicProxy;
+import DDesignModel.BJdkDynamiAproxy.Impl.Subjectlmpl;
 
 /**
  * JDK动态代理是代理模式的一种实现方式，其只能代理接口。

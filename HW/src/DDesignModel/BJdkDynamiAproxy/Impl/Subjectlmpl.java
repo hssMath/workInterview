@@ -1,6 +1,6 @@
-package DDesignModel.BDynamicAproxy.Impl;
+package DDesignModel.BJdkDynamiAproxy.Impl;
 
-import DDesignModel.BDynamicAproxy.Bo.Subject;
+import DDesignModel.BJdkDynamiAproxy.Bo.Subject;
 
 /**
  * Subjectlmpl

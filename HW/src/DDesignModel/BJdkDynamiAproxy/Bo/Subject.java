@@ -1,4 +1,4 @@
-package DDesignModel.BDynamicAproxy.Bo;
+package DDesignModel.BJdkDynamiAproxy.Bo;
 
 /**
  * Subject
