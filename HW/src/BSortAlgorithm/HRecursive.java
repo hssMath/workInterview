@@ -1,5 +1,5 @@
-package ADataConstract;
-public class GRecursive {
+package BSortAlgorithm;
+public class HRecursive {
 	public static void main(String[] args) {
 		print(8);
 	}
@@ -10,10 +10,8 @@ public class GRecursive {
 	 * 		特点：
 	 * 			1.无直接跳出循环关键字，但有间接跳出逻辑标志
 	 * @param:@param i   
-	 * @author:heshuanshuan
 	 * @date:2020年1月14日
 	 * @return:void 
-	 * @history 修订历史（历次修订内容、修订人、修订时间等）
 	 */
 	public static void print(int i) {
 		if (i>0) {

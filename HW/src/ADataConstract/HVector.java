@@ -3,8 +3,11 @@ package ADataConstract;
 import java.util.Enumeration;
 import java.util.Vector;
 
+/**
+ * Vector
+ */
 public class HVector {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         // initial size is 3, increment is 2
         Vector v = new Vector(3, 2);
         System.out.println("Initial size: " + v.size());
@@ -25,8 +28,8 @@ public class HVector {
         System.out.println("Current capacity: " +v.capacity());
         v.addElement(new Integer(11));
         v.addElement(new Integer(12));
-        System.out.println("First element: " +(Integer)v.firstElement());
-        System.out.println("Last element: " +(Integer)v.lastElement());
+        System.out.println("First element: " + v.firstElement());
+        System.out.println("Last element: " + v.lastElement());
         if(v.contains(new Integer(3)))
             System.out.println("Vector contains 3.");
         // enumerate the elements in the vector.
