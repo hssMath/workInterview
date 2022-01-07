@@ -8,6 +8,6 @@ import DDesignModel.AJdkStaticProxy.Bo.HelloBo;
 public class HelloImpl implements HelloBo {
     @Override
     public void sayHello() {
-        System.out.println("hello Java");
+        System.out.println("目标类的sayHello方法");
     }
 }

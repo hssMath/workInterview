@@ -1,4 +1,4 @@
-package DDesignModel.BJdkDynamiAproxy.Impl;
+package DDesignModel.BJdkDynamiAproxy.BoImpl;
 
 import DDesignModel.BJdkDynamiAproxy.Bo.Subject;
 
