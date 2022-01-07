@@ -13,10 +13,10 @@ import java.lang.reflect.Proxy;
  **/
 public class JDKDynamicProxy implements InvocationHandler {
 
-    private final Object target;
+    private final Object object;
 
-    public JDKDynamicProxy(Object target) {
-        this.target = target;
+    public JDKDynamicProxy(Object object) {
+        this.object = object;
     }
 
     /**
@@ -26,13 +26,13 @@ public class JDKDynamicProxy implements InvocationHandler {
      * @return
      */
     public <T> T getProxy() {
-        return (T) Proxy.newProxyInstance(target.getClass().getClassLoader(), target.getClass().getInterfaces(), this);
+        return (T) Proxy.newProxyInstance(object.getClass().getClassLoader(), object.getClass().getInterfaces(), this);
     }
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         System.out.println("Do something before");
-        Object result = method.invoke(target, args);
+        Object result = method.invoke(object, args);
         System.out.println("Do something after");
         return result;
     }

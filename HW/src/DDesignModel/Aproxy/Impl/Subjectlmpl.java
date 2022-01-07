@@ -3,15 +3,15 @@ package DDesignModel.Aproxy.Impl;
 import DDesignModel.Aproxy.Bo.Subject;
 
 /**
- * RealSubject
+ * Subjectlmpl
  * 真实主题类
  *
  * @author
  * @create 2018-03-29 14:21
  **/
-public class RealSubject implements Subject {
+public class Subjectlmpl implements Subject {
     @Override
     public void doSomething() {
-        System.out.println("RealSubject do something");
+        System.out.println("Subjectlmpl do something");
     }
 }
