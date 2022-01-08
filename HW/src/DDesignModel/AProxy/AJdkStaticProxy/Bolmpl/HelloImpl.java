@@ -1,6 +1,6 @@
-package DDesignModel.AJdkStaticProxy.Bolmpl;
+package DDesignModel.AProxy.AJdkStaticProxy.Bolmpl;
 
-import DDesignModel.AJdkStaticProxy.Bo.HelloBo;
+import DDesignModel.AProxy.AJdkStaticProxy.Bo.HelloBo;
 
 /**
  * 目标类的某个方法

@@ -1,4 +1,4 @@
-package DDesignModel.BJdkDynamiAproxy.Bo;
+package DDesignModel.AProxy.BJdkDynamiAproxy.Bo;
 
 /**
  * Subject
@@ -8,5 +8,6 @@ package DDesignModel.BJdkDynamiAproxy.Bo;
  * @create 2018-03-29 14:16
  **/
 public interface Subject {
-    void doSomething();
+    void doSomething(String str);
+    void wirte(String str);
 }

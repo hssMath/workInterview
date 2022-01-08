@@ -1,6 +1,6 @@
-package DDesignModel.AJdkStaticProxy.Bolmpl;
+package DDesignModel.AProxy.AJdkStaticProxy.Bolmpl;
 
-import DDesignModel.AJdkStaticProxy.Bo.GoodByeBo;
+import DDesignModel.AProxy.AJdkStaticProxy.Bo.GoodByeBo;
 
 public class GoodByeBoImpl implements GoodByeBo {
 

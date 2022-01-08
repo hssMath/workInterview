@@ -1,7 +1,7 @@
-package DDesignModel.AJdkStaticProxy;
+package DDesignModel.AProxy.AJdkStaticProxy;
 
-import DDesignModel.AJdkStaticProxy.proxy.GoodByeProxyImpl;
-import DDesignModel.AJdkStaticProxy.proxy.HelloProxyImpl;
+import DDesignModel.AProxy.AJdkStaticProxy.proxy.GoodByeProxyImpl;
+import DDesignModel.AProxy.AJdkStaticProxy.proxy.HelloProxyImpl;
 
 /**
  * 代理类是手动创建的java文件，目标类是固定的。在sprong中，手动创建代理类，目标类的接口及接口方法已经定义好了。
