@@ -1,7 +1,8 @@
 package DDesignModel.AProxy.BJdkDynamiAproxy;
 
-import DDesignModel.AProxy.BJdkDynamiAproxy.Bo.Subject;
-import DDesignModel.AProxy.BJdkDynamiAproxy.BoImpl.Subjectlmpl;
+import DDesignModel.AProxy.BJdkDynamiAproxy.bo.Subject;
+import DDesignModel.AProxy.BJdkDynamiAproxy.boImpl.Subjectlmpl;
+import DDesignModel.AProxy.BJdkDynamiAproxy.proxyHandlerClass.JdkDynamicProxyHandler;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
@@ -32,20 +33,17 @@ public class JdkDynamicProxyHandlerTest {
 //        保存生成的代理类的字节码文件
 //        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
 
-        /**
-         *   创建代理对象，使用Proxy
-         */
-        //1。创建目标对象：
-         Subject factory = new Subjectlmpl();//接口的引用指向子类的声明
+        //1。创建目标对象：使用Proxy
+         Subject target = new Subjectlmpl();//接口的引用指向子类的声明
         //2。创建InvocationHandler对象:
-         InvocationHandler handler  = new JdkDynamicProxyHandler(factory);//接口的引用指向子类的声明
+         InvocationHandler handler  = new JdkDynamicProxyHandler(target);//接口的引用指向子类的声明
         //3.创建代理对象;并把返回值转为接口类型(可以强转是因为目标对象实现了这个接口)
-        Subject proxySubject = (Subject) Proxy.newProxyInstance(factory.getClass().getClassLoader(), factory.getClass().getInterfaces(),handler);
+        Subject proxyTargetObject = (Subject) Proxy.newProxyInstance(target.getClass().getClassLoader(), target.getClass().getInterfaces(),handler);
 
-        System.out.println("代理对象proxySubject的name:"+ proxySubject.getClass().getName());
+        System.out.println("动态代理对象获取到的的代理对象名称:"+ proxyTargetObject.getClass().getName());
 
         //4.通过动态代理对象执行方法
-        proxySubject.doSomething("zhangsan");
-        proxySubject.wirte("lisi");
+        proxyTargetObject.doSomething("zhangsan");
+        proxyTargetObject.wirte("lisi");
     }
 }

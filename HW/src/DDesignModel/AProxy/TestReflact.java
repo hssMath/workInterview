@@ -1,6 +1,6 @@
-package DDesignModel.AProxy.BJdkDynamiAproxy;
+package DDesignModel.AProxy;
 
-import DDesignModel.AProxy.BJdkDynamiAproxy.BoImpl.Subjectlmpl;
+import DDesignModel.AProxy.BJdkDynamiAproxy.boImpl.Subjectlmpl;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

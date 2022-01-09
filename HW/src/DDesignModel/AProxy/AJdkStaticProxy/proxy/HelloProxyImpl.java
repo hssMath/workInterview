@@ -1,8 +1,8 @@
 package DDesignModel.AProxy.AJdkStaticProxy.proxy;
 
-import DDesignModel.AProxy.AJdkStaticProxy.Bo.HelloBo;
-import DDesignModel.AProxy.AJdkStaticProxy.Bolmpl.GoodByeBoImpl;
-import DDesignModel.AProxy.AJdkStaticProxy.Bolmpl.HelloImpl;
+import DDesignModel.AProxy.AJdkStaticProxy.bo.HelloBo;
+import DDesignModel.AProxy.AJdkStaticProxy.bolmpl.GoodByeBoImpl;
+import DDesignModel.AProxy.AJdkStaticProxy.bolmpl.HelloImpl;
 import org.junit.Test;
 
 /**

@@ -1,7 +1,7 @@
 package DDesignModel.AProxy.AJdkStaticProxy.proxy;
 
-import DDesignModel.AProxy.AJdkStaticProxy.Bo.GoodByeBo;
-import DDesignModel.AProxy.AJdkStaticProxy.Bolmpl.GoodByeBoImpl;
+import DDesignModel.AProxy.AJdkStaticProxy.bo.GoodByeBo;
+import DDesignModel.AProxy.AJdkStaticProxy.bolmpl.GoodByeBoImpl;
 
 /**
  * 1.创建一个接口，定义一个方法。表示目标和代理类要做的事情。

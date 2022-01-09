@@ -1,4 +1,4 @@
-package DDesignModel.AProxy.AJdkStaticProxy.Bo;
+package DDesignModel.AProxy.AJdkStaticProxy.bo;
 
 /**
  * 表示用户、代理、目标都要实现的功能

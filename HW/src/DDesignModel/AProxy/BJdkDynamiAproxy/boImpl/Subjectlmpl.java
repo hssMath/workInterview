@@ -1,6 +1,6 @@
-package DDesignModel.AProxy.BJdkDynamiAproxy.BoImpl;
+package DDesignModel.AProxy.BJdkDynamiAproxy.boImpl;
 
-import DDesignModel.AProxy.BJdkDynamiAproxy.Bo.Subject;
+import DDesignModel.AProxy.BJdkDynamiAproxy.bo.Subject;
 
 /**
  * Subjectlmpl
@@ -12,11 +12,11 @@ import DDesignModel.AProxy.BJdkDynamiAproxy.Bo.Subject;
 public class Subjectlmpl implements Subject {
     @Override
     public void doSomething(String str) {
-        System.out.println("Subjectlmpl do something:"+str);
+        System.out.println("目标类的doSomething方法：target dosomething:"+str);
     }
 
     @Override
     public void wirte(String str) {
-        System.out.println("wirte do something:"+str);
+        System.out.println("目标类的wirte方法：target wirte:"+str);
     }
 }
