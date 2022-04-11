@@ -10,7 +10,7 @@ import java.lang.reflect.Method;
  *    1、 新建一个接口,定义目标类要完成的功能。
  *    2、 创建目标类，实现接口
  *    3、 创建代理类，实现java.lang.reflect.InvocationHandler接口：调用目标方法，增强方法功能。
- *    4、 使用proxy类的静态方法，创建代理对象，并把返回值转为接口类型。
+ *    4、 使用 proxy 类的静态方法，创建代理对象，并把返回值转为接口类型。
  */
 public class JdkDynamicProxyHandler implements InvocationHandler {
     private Object target = null;

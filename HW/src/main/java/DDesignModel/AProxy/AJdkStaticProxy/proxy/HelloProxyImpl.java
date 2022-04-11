@@ -3,7 +3,6 @@ package DDesignModel.AProxy.AJdkStaticProxy.proxy;
 import DDesignModel.AProxy.AJdkStaticProxy.bo.HelloBo;
 import DDesignModel.AProxy.AJdkStaticProxy.bolmpl.GoodByeBoImpl;
 import DDesignModel.AProxy.AJdkStaticProxy.bolmpl.HelloImpl;
-import org.junit.Test;
 
 /**
  * 1.创建一个接口，定义一个方法。表示目标和代理类要做的事情。
@@ -23,7 +22,6 @@ public class HelloProxyImpl implements HelloBo {
     private final GoodByeBoImpl goodByeBo = new GoodByeBoImpl();
 
     @Override
-    @Test
     public void sayHello() {//目标方法的调用；功能的增强。
         /**
          * 代理类本身不实现服务，而是通过调用被代理类中的方法来提供服务。
