@@ -1,4 +1,4 @@
-package ZTest;
+package Test;
 
 /**
  * @author hss

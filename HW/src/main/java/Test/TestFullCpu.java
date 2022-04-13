@@ -1,4 +1,4 @@
-package ZTest;
+package Test;
 
 public class TestFullCpu {
     public static void main(String[] args) {

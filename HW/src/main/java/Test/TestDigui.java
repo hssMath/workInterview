@@ -1,4 +1,4 @@
-package ZTest;
+package Test;
 
 //斐波那契数列
 public class TestDigui {

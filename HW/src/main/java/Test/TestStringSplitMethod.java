@@ -1,4 +1,4 @@
-package ZTest;
+package Test;
 
 public class TestStringSplitMethod {
     public static void main(String[] args) {
