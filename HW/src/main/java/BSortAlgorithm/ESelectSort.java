@@ -8,7 +8,7 @@ public class ESelectSort {
 		System.out.println("选择排序前："+Arrays.toString(arr));
 		selectSort(arr);
 		System.out.println("选择排序前："+Arrays.toString(arr));
-		PrintlnString(arr);
+//		PrintlnString(arr);
 	}
 
 	/**
@@ -35,6 +35,7 @@ public class ESelectSort {
 				arr[i] = arr[minIndex];
 				arr[minIndex] = temp;
 			}
+			System.out.println(Arrays.toString(arr));
 		}
 	}
 
