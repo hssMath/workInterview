@@ -1,4 +1,4 @@
-package FirstWrittenTest;
+package ScannerFunctionTest;
 
 import java.util.Scanner;
 
