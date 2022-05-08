@@ -7,16 +7,16 @@ package ADataConstract;
  * @author：heshuanshuan 
  * @date 2019年12月29日
  */
-public class DNode {
-	private final int data;//节点内容
-	private DNode next;//下一个节点
+public class DSingleNode {
+	private final int value;//节点内容
+	private DSingleNode next;//下一个节点
 	
 	/**
 	 * 给节点添加节点内容值
 	 * @param value
 	 */
-	public DNode(int value) {
-		this.data=value;
+	public DSingleNode(int value) {
+		this.value=value;
 	} 
 	/*
 	 *	为节点追加节点：第1版：只能一个接一个
@@ -42,28 +42,28 @@ public class DNode {
 	 *	1.为节点追加节点：第3版:第一个append第二个，第二个append第三个，可以连着append
 	 *		注意用的是while循环，找最后一个节点，找到最后最后一个节点，把新节点追加到最后一个节点之后                                                                                                                                                          
 	 */
-	public DNode append(DNode dNode) {
-		DNode currentNote = this;//this为当前链表,也就是第一个节点
+	public DSingleNode append(DSingleNode dSingleNode) {
+		DSingleNode currentNote = this;//this为当前链表,也就是第一个节点
 		while (true) {//循环向后找
-			DNode nextNote = currentNote.next();//当前节点的下一个节点
+			DSingleNode nextNote = currentNote.next();//当前节点的下一个节点
 			if (nextNote==null) {//当前节点的下一个节点为空，当前节点是最后一个节点
 				break;
 			}
 			currentNote = nextNote;//当前节点赋给当前节点，循环跳出时当前节点为最后一个节点
 		}
-		currentNote.next=dNode;//为最后一个节点追加节点
+		currentNote.next= dSingleNode;//为最后一个节点追加节点
 		return currentNote;
 	}
 	/*
 	 * 2.获得当前节点的节点值
 	 */
-	public int getData() {
-		return this.data;
+	public int getValue() {
+		return this.value;
 	}
 	/*
 	 * 3.当前节点的下一个节点
 	 */
-	public DNode next() {
+	public DSingleNode next() {
 		return this.next;
 	}
 	
@@ -80,7 +80,7 @@ public class DNode {
 	 * @history 修订历史（历次修订内容、修订人、修订时间等）
 	 */
 	public void removeNext() {
-		DNode newNext = next.next;
+		DSingleNode newNext = next.next;
 		this.next=newNext;
 	}
 	
@@ -95,10 +95,10 @@ public class DNode {
 	 * @return:void 
 	 * @history 修订历史（历次修订内容、修订人、修订时间等）
 	 */
-	public void after(DNode dNode) {//n1.next.after(note5)
-		DNode nextNote = next;// 现成的链表n1=1，2，4		n1.next=1,2		next=4
-		this.next=dNode;//this=1,2
-		dNode.next=nextNote;
+	public void after(DSingleNode dSingleNode) {//n1.next.after(note5)
+		DSingleNode nextNote = next;// 现成的链表n1=1，2，4		n1.next=1,2		next=4
+		this.next= dSingleNode;//this=1,2
+		dSingleNode.next=nextNote;
 	}
 	/**
 	 * 
@@ -110,9 +110,9 @@ public class DNode {
 	 * @history 修订历史（历次修订内容、修订人、修订时间等）
 	 */
 	public void show() {
-		DNode currentNote = this;
+		DSingleNode currentNote = this;
 		while (true) {
-			System.out.print(currentNote.data+" ");
+			System.out.print(currentNote.value+" ");
 			currentNote = currentNote.next;
 			if (null==currentNote) {
 				break;
@@ -129,23 +129,23 @@ public class DNode {
 		 *	3.单链表添加节点，下个节点作为下下个节点，新节点作为下一个节点
 		 */ 
 		
-		DNode n1 = new DNode(1);
-		DNode n2 = new DNode(2);
-		DNode n3 = new DNode(3);
-		DNode n4 = new DNode(4);
-		DNode n5 = new DNode(5);
-		DNode n6 = new DNode(6);
-		DNode n7 = new DNode(7);
+		DSingleNode n1 = new DSingleNode(1);
+		DSingleNode n2 = new DSingleNode(2);
+		DSingleNode n3 = new DSingleNode(3);
+		DSingleNode n4 = new DSingleNode(4);
+		DSingleNode n5 = new DSingleNode(5);
+		DSingleNode n6 = new DSingleNode(6);
+		DSingleNode n7 = new DSingleNode(7);
 //		n1.append(n2);
 //		n2.append(n3);
-//		System.out.println(n1.next().getData());//1：只能一个和另一个首位相连
+//		System.out.println(n1.next().getValue());//1：只能一个和另一个首位相连
 		
 //		n1.append(n2);
 //		n1.append(n3);
-//		System.out.println(n1.next().getData());//2：第一个接第二个，第一个接第三个
+//		System.out.println(n1.next().getValue());//2：第一个接第二个，第一个接第三个
 		
 		n1.append(n2).append(n3).append(n4).append(n5).append(n6).append(n7);//拼一块之后，n1就是一个整体
-//		System.out.println(n1.next.getData());//3：第一个接第二个，第二个接第三个，连着接
+//		System.out.println(n1.next.getValue());//3：第一个接第二个，第二个接第三个，连着接
 		n1.show();
 		System.out.println();
 		
@@ -154,7 +154,7 @@ public class DNode {
 		n1.show();
 		System.out.println();
 		
-		DNode note33 = new DNode(33);
+		DSingleNode note33 = new DSingleNode(33);
 		n1.next.after(note33);//单链表插入节点
 		n1.show();
 		System.out.println();

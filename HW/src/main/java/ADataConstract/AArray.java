@@ -3,8 +3,6 @@ package ADataConstract;
  * 
  * @decription:数组
  * @class_name：Array
- * @author hss
- * @author：heshuanshuan 
  * @date 2019年12月29日
  */
 public class AArray {

@@ -7,15 +7,15 @@ package ADataConstract;
  * @author：heshuanshuan 
  * @date 2019年12月29日
  */
-public class ELoopNode {
+public class FLoopNode {
 	private final int data;//节点内容
-	private ELoopNode next = this;//下一个节点
+	private FLoopNode next = this;//下一个节点
 	
 	/**
 	 * 给节点添加节点内容
 	 * @param value
 	 */
-	public ELoopNode(int value) {
+	public FLoopNode(int value) {
 		this.data=value;
 	} 
 	/*
@@ -27,7 +27,7 @@ public class ELoopNode {
 	/*
 	 * 3.当前节点的下一个节点
 	 */
-	public ELoopNode next() {
+	public FLoopNode next() {
 		return this.next;
 	}
 	
@@ -42,8 +42,8 @@ public class ELoopNode {
 	 * @return:void 
 	 * @history 修订历史（历次修订内容、修订人、修订时间等）
 	 */
-	public void after(ELoopNode note) { 
-		ELoopNode nextNote = next;//取出下一节点，作为下下个节点
+	public void after(FLoopNode note) {
+		FLoopNode nextNote = next;//取出下一节点，作为下下个节点
 		this.next=note;//传入的节点作为当前节点的下一个节点
 		note.next=nextNote;//下下一个节点作为新节点的下一个节点
 	}
@@ -52,10 +52,10 @@ public class ELoopNode {
 		/*
 		 * n1、n2、n3、n4：每一个都是独立的循环链表
 		 */
-		ELoopNode n1 = new ELoopNode(1);
-		ELoopNode n2 = new ELoopNode(2);
-		ELoopNode n3 = new ELoopNode(3);
-		ELoopNode n4 = new ELoopNode(4);
+		FLoopNode n1 = new FLoopNode(1);
+		FLoopNode n2 = new FLoopNode(2);
+		FLoopNode n3 = new FLoopNode(3);
+		FLoopNode n4 = new FLoopNode(4);
 		
 		n1.after(n2);
 		n2.after(n3);
