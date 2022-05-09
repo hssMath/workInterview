@@ -1,4 +1,4 @@
-package CLeetCodeExercise.AAapplication.duigu;
+package Aapplication.duigu;
 
 import java.util.HashMap;
 import java.util.Map;

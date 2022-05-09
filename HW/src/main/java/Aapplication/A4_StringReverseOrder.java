@@ -1,4 +1,4 @@
-package CLeetCodeExercise.AAapplication;
+package Aapplication;
 
 import java.util.Scanner;
 

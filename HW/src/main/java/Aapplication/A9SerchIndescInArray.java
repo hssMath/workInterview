@@ -1,4 +1,4 @@
-package CLeetCodeExercise.AAapplication;
+package Aapplication;
 
 public class A9SerchIndescInArray {
     /**
