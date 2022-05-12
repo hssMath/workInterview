@@ -1,12 +1,10 @@
 package Aapplication;
 
-import java.util.Iterator;
-import java.util.Set;
+import java.util.Map;
 import java.util.TreeMap;
 
 /**
  * hashmap 的 key 相同时将 value 进行累加。
- *
  */
 public class A11HashMapUseValue {
     public static void main(String[] args) {
@@ -16,11 +14,14 @@ public class A11HashMapUseValue {
         addMap(hashMap, 3, 4);
         addMap(hashMap, 0, 2);
 
-        soutMap(hashMap);
+        byKeySetSoutKeyAndValue(hashMap);
+        byEntrySetSoutKeyAndValue(hashMap);
+        byValuesSoutValue(hashMap);
     }
 
     /**
      * hashmap 的 key 相同时将 value 进行累加的方法。
+     *
      * @param hashMap
      * @param j
      * @param k
@@ -34,15 +35,33 @@ public class A11HashMapUseValue {
     }
 
     /**
-     * hashmap的遍历输出
+     * 1、遍历 hashMap 输出 key 和 value：通过 hashMap.keySet 先得到 key 的集合，然后获取 key 和 key 对应的 value
      * @param hashMap
      */
-    public static void soutMap(TreeMap<Integer, Integer> hashMap) {
-        Set<Integer> ky = hashMap.keySet();
-        Iterator<Integer> lr = ky.iterator();
-        while (lr.hasNext()) {
-            Integer key = lr.next();
+    public static void byKeySetSoutKeyAndValue(TreeMap<Integer, Integer> hashMap) {
+        for (Integer key : hashMap.keySet()) {
             System.out.println(key + " " + hashMap.get(key));//再用拿到的键的get方法取值
+        }
+    }
+
+    /**
+     * 2、推荐，尤其是容量大时使用：通过 hashMap.entrySet 先得到 entry 对象，然后通过 get 得到 key 和 value
+     * @param hashMap
+     */
+    public static void byEntrySetSoutKeyAndValue(TreeMap<Integer, Integer> hashMap) {
+        System.out.println("通过Map.entrySet遍历key和value");
+        for (Map.Entry<Integer, Integer> entry : hashMap.entrySet()) {
+            System.out.println(entry.getKey() + " " + entry.getValue());
+        }
+    }
+
+    /**
+     * 3、通过 hashMap.values()遍历输出 hashMap 的所有 value
+     * @param hashMap
+     */
+    public static void byValuesSoutValue(TreeMap<Integer, Integer> hashMap) {
+        for (Integer value : hashMap.values()) {
+            System.out.println(value);
         }
     }
 }
