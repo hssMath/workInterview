@@ -4,9 +4,12 @@ import java.util.Map;
 import java.util.TreeMap;
 
 /**
- * hashmap 的 key 相同时将 value 进行累加。
+ * 利用 TreeMap 相同的 Integer 类型的 key  的 Integer 类型的 value 进行累加，并"升序"输出。
  */
-public class A11HashMapUseValue {
+public class A11UseTreeMapResolveIntegerRepeatKeySumIntegerValue {
+    /**
+     * 因为 Treemap 的底层使用红黑树实现的，key的比较大小是必须的；但是当你传入的 key 不是基本类型或者字符串而是自定义的类。遍历时就会报错。
+     */
     public static void main(String[] args) {
         TreeMap<Integer, Integer> hashMap = new TreeMap<>();
         addMap(hashMap, 1, 3);
@@ -49,7 +52,6 @@ public class A11HashMapUseValue {
      * @param hashMap
      */
     public static void byEntrySetSoutKeyAndValue(TreeMap<Integer, Integer> hashMap) {
-        System.out.println("通过Map.entrySet遍历key和value");
         for (Map.Entry<Integer, Integer> entry : hashMap.entrySet()) {
             System.out.println(entry.getKey() + " " + entry.getValue());
         }
