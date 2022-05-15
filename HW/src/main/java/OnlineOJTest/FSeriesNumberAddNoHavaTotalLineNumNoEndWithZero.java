@@ -1,4 +1,4 @@
-package ScannerFunctionTest;
+package OnlineOJTest;
 
 import java.util.Scanner;
 
