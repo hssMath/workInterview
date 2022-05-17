@@ -10,7 +10,7 @@ public class ATwoNumberAdd {
      * 1、public static void main(),自己在练习的时候主函数的参数没写，出现数组越界报错，报错如下：
      *      首次执行出错：
      *          请检查是否存在数组越界等非法访问情况
-     *          Error: Main method not found in class Main, please define the main method as:
+     *          Error: Tool.Main method not found in class Tool.Main, please define the main method as:
      *          public static void main(String[] args) or a JavaFX application class must extend javafx.application.Application
      *      其实并不是数组越界错误，而是主函数没有写参数，自己要多注意。
      * 2、对于题目本身输入示例，虽然是按行显示，其实自测时一次性录入完毕了，然后在取值时，因为输入项全为数字，故可以使用2个连续的：sc.nextInt()进行取值，然后运算后通过sout进行输出。
