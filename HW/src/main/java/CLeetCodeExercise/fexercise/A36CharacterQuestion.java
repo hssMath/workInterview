@@ -19,6 +19,8 @@ public class A36CharacterQuestion {
      *  2、然后扫描char数组，如果是左括号，给栈push一个相匹配的右括号。
      *  3、若扫描到右括号，使用栈的pop()方法，取出栈顶元素并进行比较，若不相等，则退出循环，同时返回fasle。
      *  4、若给定的括号字符串数组是匹配的，则栈是空的。返回：true。
+     * 说明：
+     *      字符串拆分为一个字符串数组使用 String.toCharArray();
      * @param s
      * @return
      */
