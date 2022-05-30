@@ -10,6 +10,7 @@ public class A35HammingDistance {
 
     /**
      * 思路：使用 x=x&(x-1)获取二进制数中1的个数
+     *
      * @param x
      * @param y
      * @return

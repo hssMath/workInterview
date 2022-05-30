@@ -5,25 +5,25 @@ public class A000SwapNumbet {
         System.out.println(Integer.toBinaryString(9));
 
         //实现数组的翻倍或者减半
-        System.out.println(9 >> 1);
-        System.out.println(9 << 1);
+        System.out.println(4 >> 1);//减半
+        System.out.println(4 << 1);//翻倍
         int a = 4, b = 5;
         System.out.println("原始数据：a:" + a + "，b:" + b);
 
-        //通过中间临时变量，获得交换位置后的结果
+        //1、通过中间临时变量，获得交换位置后的结果
         int temp = a;
         a = b;
         b = temp;
         System.out.println("a:" + a + "，b:" + b);
 
-        //通过2个变量之和，先和-b得a，再和-a得b，获得交换位置后的结果。
+        //2、通过2个变量之和，先和-b得a，再和-a得b，获得交换位置后的结果。
         a = a + b;//先获得2数之和，然后通过:和-a赋得b；和-b得a。
         b = a - b;
         a = a - b;
         System.out.println("a:" + a + "，b:" + b);
 
         /**
-         * 先对2个变量进行异或运算，先将结果与b进行异或运算得b，再将结果与b进行异或运算得a，获得交换位置后的结果。
+         * 3、先对2个变量进行异或运算，先将结果与b进行异或运算得b，再将结果与b进行异或运算得a，获得交换位置后的结果。
          * 说明：
          *      1、任何数与0异或运算，等于任何数；
          *      2.异或运算满足交换律。

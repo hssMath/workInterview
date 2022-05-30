@@ -15,6 +15,7 @@ public class A34BitSum {
      * 思路1：使用 x=x&x(x-1)，代替对一个数的二进制数的1的计数。
      * 1、获取n个数中，指定某个数然后被转化为二进制后1的个数
      * 2、当前数使用数组前面的数做一个递归操作
+     *
      * @param num
      * @return
      */
@@ -29,6 +30,7 @@ public class A34BitSum {
 
     /**
      * 思路2：获取从0到指定数字的二进制字符串的数组
+     *
      * @param num
      * @return
      */

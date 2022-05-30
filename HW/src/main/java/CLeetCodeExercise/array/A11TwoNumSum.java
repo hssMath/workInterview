@@ -13,7 +13,8 @@ public class A11TwoNumSum {
     }
 
     /**
-     * 使用 sum-数组中第i个数，引入 hashmap，若差能在 hashmap 中找到，就返回2个数组的下标；如果找不到就put到 hashmap 中：时间复杂度 =》O(n)
+     * 思路：
+     *      使用 sum-数组中第i个数，引入 hashmap，若差能在 hashmap 中找到，就返回2个数组的下标；如果找不到就put到 hashmap 中：时间复杂度 => O(n)
      * 最差的情况，循环遍历到最后一个数，才找到。
      *
      * @param arr
@@ -24,7 +25,7 @@ public class A11TwoNumSum {
         int []result = new int[2];
         HashMap<Integer, Integer> hashMap = new HashMap<Integer, Integer>();//引入hashmap存放没有找到的值
         for (int i = 0; i <= arr.length - 1; i++) {//假如若有10个数，其最大下标为9。
-            int value = targer - arr[i];//获取目标数与第i个数的
+            int value = targer - arr[i];//获取目标数与第i个数的差
             Integer anotherIndex = hashMap.get(value);//在 hashmap 中是否能找到 key 为差值的下标
             if (null != anotherIndex){//找到了，返回当前的下标i和另外一个下标
                 result[0] = anotherIndex;
@@ -37,7 +38,7 @@ public class A11TwoNumSum {
     }
 
     /**
-     * 暴力穷举，使用for循环：时间复杂度 =》O(n的2次方)
+     * 暴力穷举，不推荐使用，使用for循环：时间复杂度 =》O(n的2次方)
      *  1、用第一个数与后面的每个数进行相加，如果和=目标数就返回两数的下标；如果不等于，
      *  2、继续用第2个数与后面的每个数进行相加，如果和=目标数，就返回两数的下标；
      *  3、直到倒数第二个数与最后一个数进行比较。
