@@ -1,16 +1,19 @@
-package CLeetCodeExercise.istring;
+package B2SelectAlgorithm;
 
 import java.util.Arrays;
 
 /**
  * 一组无序的相邻两数互不相等的数组，找出其中的一个局部最小数。
- *  1、确定一侧肯定有就可以用二分
+ *  1、确定一侧肯定有就可以用二分法
  */
-public class A42MinIndex {
+public class A43MinIndex {
     public static void main(String[] args) {
         int testTime = 1000;
         int maxLen = 10;
         int maxValue = 100;
+        /**
+         * 写一个对数器
+         */
         System.out.println("测试开始");
         for (int i = 0; i < testTime; i++) {
             int[] arr = randomArray(maxLen, maxValue);

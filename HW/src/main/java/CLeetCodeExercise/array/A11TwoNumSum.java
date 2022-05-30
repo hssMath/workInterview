@@ -14,7 +14,7 @@ public class A11TwoNumSum {
 
     /**
      * 思路：
-     *      使用 sum-数组中第i个数，引入 hashmap，若差能在 hashmap 中找到，就返回2个数组的下标；如果找不到就put到 hashmap 中：时间复杂度 => O(n)
+     *    使用 sum-数组中第i个数，引入 hashmap，若差能在 hashmap 中找到，就返回2个数组的下标；如果找不到就put到 hashmap 中：时间复杂度 => O(n)
      * 最差的情况，循环遍历到最后一个数，才找到。
      *
      * @param arr
