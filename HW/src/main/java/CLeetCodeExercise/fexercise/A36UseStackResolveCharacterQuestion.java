@@ -8,7 +8,7 @@ import java.util.Stack;
  *      1、左括号必须用相同类型的右括号闭合。
  *      2、左括号必须以正确的顺序闭合。
  */
-public class A36CharacterQuestion {
+public class A36UseStackResolveCharacterQuestion {
     public static void main(String[] args) {
         System.out.println(isValid("()[]{}"));
     }

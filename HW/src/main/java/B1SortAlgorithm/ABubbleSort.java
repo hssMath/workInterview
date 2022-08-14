@@ -61,6 +61,7 @@ public class ABubbleSort {
 
     /**
      * 数组的复制操作，单独写一个方法目的是在新数组开辟一个新的空间。
+     * 如果写成赋值，实际是在内存中指定的是同一块内存。
      * @param arr
      * @return
      */
@@ -93,6 +94,7 @@ public class ABubbleSort {
     }
 
     /**
+     * 可控样本数组大小
      * @param args
      */
     public static void main(String[] args) {

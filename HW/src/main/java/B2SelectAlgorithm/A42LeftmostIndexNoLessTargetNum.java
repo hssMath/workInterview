@@ -10,10 +10,10 @@ public class A42LeftmostIndexNoLessTargetNum {
         int testTime = 10000;
         int maxLen = 10;
         int maxValue = 12;
-        for (int i = 0; i < testTime ; i++) {
+        for (int i = 0; i < testTime; i++) {
             int[] arr = getGeranter(maxLen, maxValue);
             Arrays.sort(arr);
-            int value = (int)((maxValue+1)*Math.random())+ (int)(maxValue*Math.random());
+            int value = (int) ((maxValue + 1) * Math.random()) + (int) (maxValue * Math.random());
             int index = getLeftmostIndexNoLessTargetNum(arr, value);
             int testIndex = test(arr, value);
             if (index != testIndex) {

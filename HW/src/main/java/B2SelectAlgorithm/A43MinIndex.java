@@ -3,12 +3,13 @@ package B2SelectAlgorithm;
 import java.util.Arrays;
 
 /**
- * 一组无序的相邻两数互不相等的数组，找出其中的一个局部最小数。
+ * 一组无序的 相邻两数互不相等 的数组，找出其中的一个局部最小数。
+ *  1、局部最小数不是一个，是多个数，返回一个就可以。
  *  1、确定一侧肯定有就可以用二分法
  */
 public class A43MinIndex {
     public static void main(String[] args) {
-        int testTime = 1000;
+        int testTime = 50000;
         int maxLen = 10;
         int maxValue = 100;
         /**

@@ -8,6 +8,7 @@ import java.util.TreeMap;
  */
 public class AUseTreeMapResolveIntegerRepeatKeySumIntegerValue {
     /**
+     * Treemap 在 put 元素时会根据 key 的大小，进行自动排序。
      * 因为 Treemap 的底层使用红黑树实现的，key的比较大小是必须的；但是当你传入的 key 不是基本类型或者字符串而是自定义的类。遍历时就会报错。
      */
     public static void main(String[] args) {
@@ -17,12 +18,11 @@ public class AUseTreeMapResolveIntegerRepeatKeySumIntegerValue {
         addMap(hashMap, 3, 4);
         addMap(hashMap, 0, 2);
         byEntrySetSoutKeyAndValue(hashMap);
-//        byKeySetSoutKeyAndValue(hashMap);
-//        byValuesSoutValue(hashMap);
     }
 
     /**
-     * hashmap 的 key 相同时将 value 进行累加的方法。
+     * 给 hashmap 添加元素时，执行判断：如果 key 已存在则取出 key 对应的 value 进行相加后 put；如果不存在，则直接进行 put。
+     *
      * @param hashMap
      * @param j
      * @param k
@@ -36,17 +36,9 @@ public class AUseTreeMapResolveIntegerRepeatKeySumIntegerValue {
     }
 
     /**
-     * 1、遍历 hashMap 输出 key 和 value：通过 hashMap.keySet 先得到 key 的集合，然后获取 key 和 key 对应的 value
-     * @param hashMap
-     */
-//    public static void byKeySetSoutKeyAndValue(TreeMap<Integer, Integer> hashMap) {
-//        for (Integer key : hashMap.keySet()) {
-//            System.out.println(key + " " + hashMap.get(key));//再用拿到的键的get方法取值
-//        }
-//    }
-
-    /**
-     * 2、推荐，尤其是容量大时使用：通过 hashMap.entrySet 先得到 entry 对象，然后通过 get 得到 key 和 value
+     * 1、循环遍历 map 集合（推荐使用），尤其是容量大时使用：通过 hashMap.entrySet 先得到 entry 对象，
+     * 然后通过 get 得到 key 和 value
+     *
      * @param hashMap
      */
     public static void byEntrySetSoutKeyAndValue(TreeMap<Integer, Integer> hashMap) {
@@ -55,6 +47,16 @@ public class AUseTreeMapResolveIntegerRepeatKeySumIntegerValue {
         }
     }
 
+
+    /**
+     * 2、遍历 hashMap 输出 key 和 value：通过 hashMap.keySet 先得到 key 的集合，然后获取 key 和 key 对应的 value
+     * @param hashMap
+     */
+//    public static void byKeySetSoutKeyAndValue(TreeMap<Integer, Integer> hashMap) {
+//        for (Integer key : hashMap.keySet()) {
+//            System.out.println(key + " " + hashMap.get(key));//再用拿到的键的get方法取值
+//        }
+//    }
     /**
      * 3、通过 hashMap.values()遍历输出 hashMap 的所有 value
      * @param hashMap

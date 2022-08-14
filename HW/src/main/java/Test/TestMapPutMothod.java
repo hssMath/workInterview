@@ -5,6 +5,9 @@ import java.util.Iterator;
 import java.util.Map;
 
 /**
+ * 说明：
+ *  1、hashmap 的 key 若为基础类型、原生类型为值传递；非基础类型使用引用传递，内存地址作为 key。
+ *  2、一个key与value占用的字节数为两个的和。
  * @author hss
  */
 public class TestMapPutMothod {
