@@ -21,10 +21,10 @@ public class A13MoveZeros {
      *      第一个for循环挨个取出数组中的非0元素并赋值给单独定义的 index，取完之后，从接着的下标开始使用第二个for循环补0，直到数组的最大下标。
      * 方式：
      *      1.设置一个index，使用for循环将原数组循环个遍，如果不是0，只将非0值移动到第index位置,然后index + 1。
-     *          （取出数组中的非0元素，全部放在数组前面部分；剩余的位置元素不变）
+     *          （取出数组中的非0元素，全部放在数组前半部分；剩余的位置元素不变）
      *      2.遍历结束之后，前面放的全是非0元素，剩余的元素全是空的：index值表示为非0的个数也表示数组的下标，接着这个index遍历，剩余位置补0。
      *          （第一步记录了非0的下边，估第二次for循环从index位置开始把数组剩余元素直接补0）
-     * @param nums
+     * @param nums 待处理数组
      */
     public static void moveZeros(int[] nums){
         if (nums == null || nums.length <= 1) {//数组为空，不做任何处理，退出方法。
@@ -41,5 +41,4 @@ public class A13MoveZeros {
             nums[i] = 0;
         }
     }
-
 }
