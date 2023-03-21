@@ -10,4 +10,10 @@ public class SmsServiceImpl implements SmsService {
         System.out.println("真实的 send message : " + message);
         return message;
     }
+
+    @Override
+    public String send222(String message) {
+        System.out.println("send222方法的 send message : " + message);
+        return message;
+    }
 }

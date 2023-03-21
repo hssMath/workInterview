@@ -29,11 +29,12 @@ import DDesignModel.AProxy.BJdkDynamiAproxy.getProxyObject.JdkProxyFactory;
 public class TestDynamicProxy {
     public static void main(String[] args) {
         // 保存生成的代理类的字节码文件
-//        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
+        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
+        SmsService smsService1 = new SmsServiceImpl();
 
-        // 动态代理更加灵活，不需要必须实现接口，可以直接代理实现类
-        SmsService smsService = (SmsService) JdkProxyFactory.getProxy(new SmsServiceImpl());
-//        System.out.println("动态代理对象获取到的的代理对象名称:"+ smsService.getClass().getName());
+        // 动态代理类更加灵活，不需要必须实现接口，可以直接代理实现类
+        SmsService smsService = (SmsService) JdkProxyFactory.getProxy(smsService1);
         smsService.send("Java!");
+        smsService.send222("Java!");
     }
 }

@@ -5,4 +5,5 @@ package DDesignModel.AProxy.BJdkDynamiAproxy.bo;
  */
 public interface SmsService {
     String send(String message);
+    String send222(String message);
 }

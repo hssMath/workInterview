@@ -1,4 +1,4 @@
-package DDesignModel.AProxy.BJdkDynamiAproxy.proxyHandlerClass;
+package DDesignModel.AProxy.BJdkDynamiAproxy.proxyClass;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
@@ -16,11 +16,11 @@ import java.lang.reflect.Method;
  *    3、通过 Proxy.newProxyInstance(ClassLoader loader,Class<?>[] interfaces,InvocationHandler h) 方法创建代理对象，
  *        并把返回值转为接口类型。
  */
-public class ProxyClass implements InvocationHandler {
+public class DynamicAProxyClass implements InvocationHandler {
     // 代理类中的真实对象：目标对象是可以动态修改的，不是固定的，需要传入进来；传入是谁，就给谁创建代理。
     private final Object target;
 
-    public ProxyClass(Object target) {
+    public DynamicAProxyClass(Object target) {
         this.target = target;
     }
 
