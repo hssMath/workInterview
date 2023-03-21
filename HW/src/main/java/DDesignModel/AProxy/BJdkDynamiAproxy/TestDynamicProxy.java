@@ -1,7 +1,7 @@
 package DDesignModel.AProxy.BJdkDynamiAproxy;
 
 import DDesignModel.AProxy.BJdkDynamiAproxy.bo.SmsService;
-import DDesignModel.AProxy.BJdkDynamiAproxy.boImpl.SmsServiceImpl;
+import DDesignModel.AProxy.BJdkDynamiAproxy.boImpl.SmsServiceByDxImpl;
 import DDesignModel.AProxy.BJdkDynamiAproxy.getProxyObject.JdkProxyFactory;
 /**
  * JDK动态代理：
@@ -29,12 +29,16 @@ import DDesignModel.AProxy.BJdkDynamiAproxy.getProxyObject.JdkProxyFactory;
 public class TestDynamicProxy {
     public static void main(String[] args) {
         // 保存生成的代理类的字节码文件
-        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
-        SmsService smsService1 = new SmsServiceImpl();
-
+//        System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
+        SmsService smsServiceByDxImpl  = new SmsServiceByDxImpl();
         // 动态代理类更加灵活，不需要必须实现接口，可以直接代理实现类
-        SmsService smsService = (SmsService) JdkProxyFactory.getProxy(smsService1);
-        smsService.send("Java!");
-        smsService.send222("Java!");
+        SmsService smsServiceByDx = (SmsService) JdkProxyFactory.getProxy(smsServiceByDxImpl);
+        smsServiceByDx.send("Java!");
+        smsServiceByDx.send222("Java!");
+
+//        SmsService smsServiceByYdImpl = new SmsServiceByYdImpl();
+//        SmsService smsServiceByYd = (SmsService) JdkProxyFactory.getProxy(smsServiceByYdImpl);
+//        smsServiceByYd.send("Java!");
+//        smsServiceByYd.send222("Java!");
     }
 }
