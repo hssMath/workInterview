@@ -1,4 +1,4 @@
-package AAAQuestionsTest.RTFirstDo.hashmapapplication;
+package AAARtQuestionTest.aUsehashmap.compareString;
 
 import java.util.Map;
 import java.util.TreeMap;
@@ -6,7 +6,7 @@ import java.util.TreeMap;
 /**
  * 利用 TreeMap 相同的 Integer 类型的 key  的 Integer 类型的 value 进行累加，并"升序"输出。
  */
-public class AUseTreeMapResolveIntegerRepeatKeySumIntegerValue {
+public class AUseTreeMapRepeatObject {
     /**
      * Treemap 在 put 元素时会根据 key 的大小，进行自动排序。
      * 因为 Treemap 的底层使用红黑树实现的，key的比较大小是必须的；但是当你传入的 key 不是基本类型或者字符串而是自定义的类。遍历时就会报错。
@@ -36,8 +36,7 @@ public class AUseTreeMapResolveIntegerRepeatKeySumIntegerValue {
     }
 
     /**
-     * 1、循环遍历 map 集合（推荐使用），尤其是容量大时使用：通过 hashMap.entrySet 先得到 entry 对象，
-     * 然后通过 get 得到 key 和 value
+     * 1、循环遍历 map 集合（推荐使用），尤其是容量大时使用：通过 hashMap.entrySet 先得到 entry 对象，然后通过 get 得到 key 和 value
      *
      * @param hashMap
      */

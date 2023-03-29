@@ -1,4 +1,4 @@
-package AAAQuestionsTest.RTFirstDo.hashmapapplication;
+package AAARtQuestionTest.aUsehashmap.compareObject;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,16 +10,16 @@ import java.util.TreeMap;
 /**
  * 利用 Treemap 的底层使用红黑树可以对基本类型或者字符串类型的 key 比较大小然后升序排列的特性，自定义比较器实现 key 为对象类型时的排序。
  */
-public class AUseTreeMapResolveObjectRepeatKeySumIntegerValue {
+public class AUseTreeMapObjectRepeat {
     /**
      * 因为 Treemap 的底层使用红黑树实现的，key 的比较大小是必须的；但是当你传入的 key 不是基本类型或者字符串而是自定义的类。遍历时就会报错。
      */
     public static void main(String[] args) {
         TreeMap<Object, Integer> hashMap = new TreeMap<>();
-        addMap(hashMap, new Student(2, 165), 2);
-        addMap(hashMap, new Student(1, 178), 1);
-        addMap(hashMap, new Student(4, 176), 4);
-        addMap(hashMap, new Student(3, 185), 3);
+        MapAddElement(hashMap, new Student(2, 165), 2);
+        MapAddElement(hashMap, new Student(1, 178), 1);
+        MapAddElement(hashMap, new Student(4, 176), 4);
+        MapAddElement(hashMap, new Student(3, 185), 3);
         byEntrySetSoutKeyAndValue(hashMap);
     }
 
@@ -30,7 +30,7 @@ public class AUseTreeMapResolveObjectRepeatKeySumIntegerValue {
      * @param j
      * @param k
      */
-    public static void addMap(TreeMap<Object, Integer> hashMap, Object j, Integer k) {
+    public static void MapAddElement(TreeMap<Object, Integer> hashMap, Object j, Integer k) {
         if (hashMap.containsKey(j)) {
             hashMap.put(j, hashMap.get(j) + k);//map.get()方法取出对应键的值
         } else {

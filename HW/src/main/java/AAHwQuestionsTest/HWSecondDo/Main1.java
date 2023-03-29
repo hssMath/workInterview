@@ -1,4 +1,4 @@
-package AAAQuestionsTest.HWSecondDo;
+package AAHwQuestionsTest.HWSecondDo;
 
 import java.util.Arrays;
 import java.util.Scanner;

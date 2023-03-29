@@ -1,4 +1,4 @@
-package AAAQuestionsTest.HWSecondDo;
+package AAHwQuestionsTest.HWSecondDo;
 
 /**
  * 华为机试题：

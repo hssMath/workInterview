@@ -1,4 +1,4 @@
-package AAAQuestionsTest.RTFirstDo;
+package AAARtQuestionTest.c1000Num;
 
 /**
  * 获取1000以内的完数
