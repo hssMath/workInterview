@@ -1,9 +1,6 @@
 package AAHwQuestionsTest;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -13,19 +10,25 @@ import java.util.stream.Collectors;
 public class Solution1 {
     public static void main(String[] args) {
         String [] str = {"eat", "tea", "tan", "ate", "nat", "bat"};
-        // 数组原样输出可以使用方法： Arrays.toString(数组名称)
+        // 数组原样输出： Arrays.toString(数组名称)
         System.out.println(Arrays.toString(str));
 
         // 数组 转 list
         List<String> list = Arrays.stream(str).collect(Collectors.toList());
+        // 以数组样式输出
         System.out.println(Arrays.toString(list.stream().toArray()));
 
         // list 转 数组
         Object[] arrays = list.stream().toArray();
+        // 以数组样式输出
         System.out.println(Arrays.toString(arrays));
 
+        System.out.println("=====================================");
+        groupAnagramsByHashMap(str);
+        System.out.println("=====================================");
 
-        List<List<String>> resultLists = groupAnagrams(str);
+//        List<List<String>> resultLists = groupAnagrams(str);
+        List<List<String>> resultLists = groupAnagramsByHashMap(str);
         // list 转数组,并以数组样式输出： Arrays.toString(待排序list集合.stream().toArray())
         System.out.println(Arrays.toString(resultLists.stream().toArray()));
 
@@ -38,21 +41,50 @@ public class Solution1 {
         System.out.println(Arrays.toString(array));
     }
     /**
-     * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+     * 使用 stream 流的 collect 方法的 Collectors.groupingBy 方法实现分组
      * @param strs string字符串一维数组
      * @return string字符串二维数组
      */
     public static List<List<String>> groupAnagrams(String[] strs) {
-//        return new ArrayList<>(Arrays.stream(strs)
-//                .collect(Collectors.groupingBy(str -> {// 返回 str 排序后的结果;按排序后的结果来grouping by，类似于 sql 里的 group by。
-//                    char[] array = str.toCharArray();
-//                    Arrays.sort(array);
-//                    return new String(array);
-//                })).values());
+        // 返回 str 排序后的结果;按排序后的结果来grouping by，类似于 sql 里的 group by
         return new ArrayList<>(Arrays.stream(strs).collect(Collectors.groupingBy(str->{
             char[] array = str.toCharArray();
             Arrays.sort(array);
             return new String(array);
         })).values());
+    }
+
+    public static List<List<String>> groupAnagramsByHashMap(String[] strs) {
+        HashMap<String,List<Integer>> hashMap = new HashMap<>();
+        for (int i = 0; i < strs.length; i++) {
+            char[] chars = strs[i].toCharArray();
+            // 数组直接排序：Arrays.sort(待排序数组名称);
+            Arrays.sort(chars);
+            String string = String.valueOf(chars);
+            if (hashMap.containsKey(string)) {
+                List<Integer> list = new ArrayList<>();
+                list = hashMap.get(string);
+                list.add(i);
+                hashMap.put(string,list);
+            }else {
+                List<Integer> list = new ArrayList<>();
+                list.add(i);
+                hashMap.put(string, list);
+            }
+        }
+        // hashmap 转 数组
+        Object[] array = hashMap.entrySet().stream().toArray();
+        System.out.println(Arrays.toString(array));
+
+        List<List<String>> listEnd = new ArrayList<>();
+        hashMap.forEach((key, val) -> {
+            List<String> list = new ArrayList<>();
+            for (int i = 0; i < val.size(); i++) {
+                list.add(strs[val.get(i)]);
+            }
+            listEnd.add(list);
+        });
+        System.out.println(Arrays.toString(listEnd.stream().toArray()));
+        return listEnd;
     }
 }
