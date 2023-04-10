@@ -11,12 +11,13 @@ import java.util.HashMap;
 public class A11TwoNumSum {
     public static void main(String[] args) {
         System.out.println(getByHashMap(new int[]{20,70,110,150}, 90));
+        getByHashMap(new int[]{20,70,110,150}, 90);
     }
 
     /**
      * 思路：
-     *    使用 sum-数组中第i个数，引入 hashmap，若差能在 hashmap 中找到，就返回2个数组的下标；
-     *    如果找不到就put到 hashmap 中：时间复杂度 => O(n)，最差的情况，循环遍历到最后一个数，才找到。
+     *    使用 sum-数组中第i个数，引入 hashmap，若差能在 hashmap 中找到，就返回2个数组的下标；如果找不到就put到 hashmap 中：
+     *    时间复杂度 => O(n)，最差的情况，循环遍历到最后一个数，才找到。
      * @param arr
      * @param target
      * @return
@@ -24,7 +25,7 @@ public class A11TwoNumSum {
     public static String getByHashMap(int[] arr, int target) {
         int []result = new int[2];
 
-        //引入hashmap存放没有找到的值
+        //引入hashmap存放数组元素值和数组下标。
         HashMap<Integer, Integer> hashMap = new HashMap<>();
         for (int i = 0; i < arr.length; i++) {// 假如若有10个数，其最大下标为9。
             int value = target - arr[i];// 获取目标数与第i个数的差

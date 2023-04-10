@@ -5,7 +5,7 @@ package CLeetCodeExercise.ebinarycal;
  */
 public class A35HammingDistance {
     public static void main(String[] args) {
-        System.out.println(hammingDistance(1, 4));
+        System.out.println(hammingDistance(4, 6));
     }
 
     /**
